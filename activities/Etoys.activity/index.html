@@ -2,6 +2,11 @@
 <head>
 <meta charset="utf-8">
 <title>Etoys Activity</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover"/>
+<link rel="stylesheet" media="not screen and (device-width: 1200px) and (device-height: 900px)"
+	  href="lib/sugar-web/graphics/css/sugar-96dpi.css">
+<link rel="stylesheet" media="screen and (device-width: 1200px) and (device-height: 900px)"
+	  href="lib/sugar-web/graphics/css/sugar-200dpi.css">
 <link rel="stylesheet" href="activity/activity.css">
 <script src="lib/require.js"></script>
 <script src="js/loader.js"></script>
@@ -10,5 +15,11 @@
 <body>
     <canvas id="sqCanvas" width="1200" height="900" style="background: #EEE; color: #000; fill: #999; stroke: #000"></canvas>
     <div id="sqSpinner"><div></div></div>
+
+    <!-- activity.setup() needs these, but we hide them in activity/activity.css -->
+    <div id="main-toolbar" class="toolbar">
+        <button class="toolbutton" id="activity-button" title="My Activity"></button>
+        <button class="toolbutton pull-right" id="stop-button" title="Stop"></button>
+    </div>
 </body>
 </html>
