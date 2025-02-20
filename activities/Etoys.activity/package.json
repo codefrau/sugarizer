@@ -1,0 +1,9 @@
+{
+  "amd": {},
+  "volo": {
+    "baseUrl": "lib",
+    "dependencies": {
+      "squeak": "https://squeak.js.org/squeak.js"
+    }
+  }
+}
